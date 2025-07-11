@@ -1,0 +1,36 @@
+# Dependencies
+node_modules
+yarn.lock
+package-lock.json
+
+# Build
+build
+dist/
+
+# VSCode
+.vscode
+
+# Docker
+docker-compose.yml
+
+# Env files
+.env
+.env.*
+.env.example
+
+# Configs
+.stackcheck.json
+*.staging.json
+*report.json
+
+# Test outputs
+*.test.ts
+/test-results/
+coverage/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

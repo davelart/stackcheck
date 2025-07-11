@@ -1,0 +1,56 @@
+{
+  "name": "stackcheck",
+  "version": "1.0.0",
+  "description": "> ⚙️ Validate your local development environment in seconds. Eliminate setup confusion, speed up onboarding, and keep your team in sync.",
+  "main": "dist/bin/stackcheck.js",
+  "types": "module",
+  "scripts": {
+    "dev": "ts-node src/bin/stackcheck.ts",
+    "build": "tsc",
+    "start": "node dist/bin/stackcheck.js",
+    "test": "uvu -r ts-node/register test",
+    "check:staging": "stackcheck -- --env staging"
+  },
+  "bin": {
+    "stackcheck": "dist/bin/stackcheck.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davelart/stackcheck.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davelart/stackcheck/issues"
+  },
+  "homepage": "https://github.com/davelart/stackcheck#readme",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "dotenv": "^17.2.0",
+    "execa": "^9.6.0",
+    "is-port-reachable": "^4.0.0",
+    "nanoid": "^5.1.5",
+    "node-fetch": "^3.3.2",
+    "prompts": "^2.4.2",
+    "semver": "^7.7.2",
+    "yaml": "^2.8.0",
+    "zod": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/commander": "^2.12.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.0.12",
+    "@types/prompts": "^2.4.9",
+    "@types/semver": "^7.7.0",
+    "@types/yaml": "^1.9.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "uvu": "^0.5.6"
+  }
+}

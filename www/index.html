@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="text-gray-900 dark:text-white bg-white dark:bg-gray-900">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="StackCheck | Your Machine Setup, Verified" />
+    <meta property="og:image" content="/stackcheck-logo.svg" />
+    <meta property="og:description" content="Validate Node.js, Docker, ports, .env, and more – with a single command." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="icon" href="/stackcheck-logo.svg" />
+    <title>StackCheck | Dev Environment Validator</title>
+  </head>
+
+  <body class="flex flex-col">
+
+    <header class="py-16 px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">StackCheck</h1>
+      <p class="text-xl text-gray-300 mb-6 max-w-2xl mx-auto">Your machine setup, verified in seconds.</p>
+      <div class="flex flex-col items-center space-y-4">
+        <a href="#" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors">
+          npx stackcheck
+        </a>
+        <span class="block mt-1 text-sm text-gray-400">Zero-install, one-line setup checker</span>
+        <!-- <div class="mt-4 max-w-md w-full mx-auto">
+          <input type="text" id="search" placeholder="Search features or examples..." class="w-full px-4 py-2 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400" />
+        </div> -->
+        <div class="text-gray-400">
+          
+          <a href="https://github.com/davelart/stackcheck" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+          •
+          <a href="https://www.npmjs.com/package/stackcheck-cli" target="_blank" class="hover:text-white transition-colors">npm</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow px-6 py-20 max-w-6xl mx-auto w-full">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- What StackCheck Validates -->
+        <!-- <div class="bg-gray-800 rounded-xl p-6" data-search="node docker env ports secrets custom"> -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="text-green-500 mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">What StackCheck Validates:</h2>
+            </div>
+            <ul class="space-y-2 text-gray-200">
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">•</span>
+                <span>Node.js version</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">•</span>
+                <span>Docker daemon status</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">•</span>
+                <span>Required environment variables</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">•</span>
+                <span>Port conflicts (e.g., 3000, 5432)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">•</span>
+                <span>Hardcoded secrets in <code class="bg-gray-700 px-1 rounded">.env</code></span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-green-500 mr-2">•</span>
+                <span>Custom shell commands (CI prep, DB checks, etc.)</span>
+              </li>
+            </ul>
+          </div>
+        <!-- </div> -->
+
+        <!-- Sample Config -->
+        <!-- <div class="bg-gray-800 rounded-xl p-6" data-search="json config env ports custom"> -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="text-blue-500 mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">Sample Config</h2>
+            </div>
+            <pre class="bg-gray-900 p-4 rounded-lg text-sm overflow-auto text-green-400 font-mono">
+  {
+    "node": ">=18.0.0",
+    "docker": true,
+    "env": ["DATABASE_URL", "JWT_SECRET"],
+    "ports": [3000, 5432],
+    "custom": ["./scripts/check-prereqs.sh"]
+  }</pre>
+          </div>
+        <!-- </div> -->
+
+        <!-- How to Use -->
+        <!-- <div class="bg-gray-800 rounded-xl p-6" data-search="init json run team"> -->
+          <div class="bg-gray-800 rounded-xl p-6">
+            <div class="flex items-center mb-4">
+              <div class="text-red-500 mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h2 class="text-xl font-semibold">How to Use</h2>
+            </div>
+            <ol class="space-y-4 text-gray-200">
+              <li class="flex items-start">
+                <span class="bg-gray-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0">1</span>
+                <span>Add <code class="bg-gray-700 px-1 rounded">.stackcheck.json</code> to your project</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-gray-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0">2</span>
+                <span>Run <code class="bg-gray-700 px-1 rounded text-green-400">npx stackcheck</code> anytime</span>
+              </li>
+              <li class="flex items-start">
+                <span class="bg-gray-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 flex-shrink-0">3</span>
+                <span>Share config with your team to standardize setup</span>
+              </li>
+            </ol>
+          </div>
+        <!-- </div> -->
+      </div>
+    </main>
+
+    <footer class="py-10 text-center text-gray-500 text-sm">
+      MIT License &copy; 2025 David Lartey
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
