@@ -1,6 +1,6 @@
 {
   "name": "stackcheck",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "> ⚙️ Validate your local development environment in seconds. Eliminate setup confusion, speed up onboarding, and keep your team in sync.",
   "main": "dist/bin/stackcheck.js",
   "types": "module",
