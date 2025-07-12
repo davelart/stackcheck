@@ -7,7 +7,7 @@
   </a>
   <h1>StackCheck</h1>
 
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/stackcheck?logo=npm&style=for-the-badge&labelColor=0000FF)](https://npmjs.com/package/stackcheck)
+[![Bundle Size](https://img.badgesize.io/https://unpkg.com/stackcheck/dist/bin/stackcheck.js?compression=gzip&style=for-the-badge&labelColor=0000FF)](https://npmjs.com/package/stackcheck)
 [![Version](https://img.shields.io/npm/v/stackcheck?logo=npm&style=for-the-badge&labelColor=000000)](https://npmjs.com/package/stackcheck)
 [![License](https://img.shields.io/npm/l/stackcheck?logo=npm&style=for-the-badge&labelColor=000000)](https://npmjs.com/package/stackcheck/LICENSE.md)
 [![Downloads](https://img.shields.io/npm/dm/stackcheck?logo=npm&style=for-the-badge&labelColor=000000)](https://npmjs.com/package/stackcheck)
