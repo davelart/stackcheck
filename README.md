@@ -1,13 +1,20 @@
-# StackCheck
+<div align="center">
+  <a href="https://stackcheck-seven.vercel.app">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/davelart/stackcheck/blob/main/www/public/logo.png">
+      <img alt="StackCheck logo" src="https://github.com/davelart/stackcheck/blob/main/www/public/logo.png" height="128">
+    </picture>
+  </a>
+  <h1>StackCheck</h1>
 
-> Validate your local development environment from a single config file.
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/stackcheck?logo=npm&style=for-the-badge&labelColor=0000FF)](https://npmjs.com/package/stackcheck)
+[![Version](https://img.shields.io/npm/v/stackcheck?logo=npm&style=for-the-badge&labelColor=000000)](https://npmjs.com/package/stackcheck)
+[![License](https://img.shields.io/npm/l/stackcheck?logo=npm&style=for-the-badge&labelColor=000000)](https://npmjs.com/package/stackcheck/LICENSE.md)
+[![Downloads](https://img.shields.io/npm/dm/stackcheck?logo=npm&style=for-the-badge&labelColor=000000)](https://npmjs.com/package/stackcheck)
+[![GitHub Repo stars](https://img.shields.io/github/stars/davelart/stackcheck?style=for-the-badge&logo=github&labelColor=000000)](https://github.com/davelart/stackcheck)
+[![GitHub Forks](https://img.shields.io/github/forks/davelart/stackcheck?style=for-the-badge&logo=github&labelColor=000000)](https://github.com/davelart/stackcheck)
 
-![CI](https://github.com/davelart/stackcheck/actions/workflows/ci.yml/badge.svg)
-![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
-![Downloads](https://img.shields.io/npm/dm/stackcheck)
-![Version](https://img.shields.io/npm/v/stackcheck)
-
----
+</div>
 
 ## Getting Started
 
@@ -23,57 +30,30 @@ From checking:
 
 ...to generating `.env.example` files and more.
 
-Check out the [StackCheck Site](https://stackcheck-seven.vercel.app) to learn more.
-
----
-
-## Documentation
-
-View the full documentation at  
-👉 **[https://stackcheck-seven.vercel.app/docs](https://stackcheck-seven.vercel.app/docs)**
-
----
-
-## Contributing
-
-Contributions to StackCheck are welcome and highly appreciated. However, before you jump right into it, we would like you to review our [Contribution Guidelines](https://github.com/davelart/stackcheck/blob/main/CONTRIBUTING.md) to make sure you have a smooth experience contributing to StackCheck.
-
----
+Visit our [Site](https://stackcheck-seven.vercel.app) to learn more.
 
 ## Installation
 
-### Using Yarn
-
-```bash
-yarn global add stackcheck
-```
-
-### Using NPM
-
-```bash
-npm install -g stackcheck
-```
-
-### Using pnpm
-
-```bash
-pnpm install -g stackcheck
+### with npm
+```sh filename="shell" copy
+$ npm i stackcheck
 ```
 
 ### Usage
 With npx (recommended for most)
 
-```bash
+```sh filename="shell" copy
 npx stackcheck
 ```
 
-### You can also use the interactive setup:
+You can also use the interactive setup:
 
-```bash
+```sh filename="shell" copy
 npx stackcheck init
 ```
 
 ### Example .stackcheck.json
+
 ```json
 {
   "node": ">=18.0.0 <20.0.0",
@@ -84,13 +64,6 @@ npx stackcheck init
 }
 ```
 
----
-
-## Support StackCheck
-
-To support this project, consider contributing or sharing with your developer network.
-
----
-
 ## License
+
 MIT © [David Lartey](https://github.com/davelart)
