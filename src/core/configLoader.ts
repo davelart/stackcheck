@@ -20,9 +20,7 @@ export function loadConfig(env?: string): StackCheckConfig {
   // const base = env ? `.stackcheck.${env}` : `.stackcheck`
   const base = env?.trim() ? `.stackcheck.${env.trim()}` : `.stackcheck`
   const jsonPath = path.resolve(`${base}.json`)
-  console.log('Looking for config at:', jsonPath)
   const ymlPath = path.resolve(`${base}.yml`)
-  console.log('Looking for config at:', ymlPath)
 
   let configRaw: any
 

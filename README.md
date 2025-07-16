@@ -21,12 +21,21 @@
 StackCheck provides a simple way to verify everything your local dev environment needs before running a project.
 
 From checking:
+
+# Core Validation
 - Node version
 - Docker status
 - ENV variables
 - Open ports
 - Secrets in .env
 - Custom shell scripts
+
+# Security Checks
+- npm audit for vulnerabilities
+- Secrets in code detection
+- Sensitive port usage
+- .gitignore configuration
+- Environment variables git tracking
 
 ...to generating `.env.example` files and more.
 
@@ -60,7 +69,8 @@ npx stackcheck init
   "docker": true,
   "env": ["DATABASE_URL", "JWT_SECRET"],
   "ports": [3000, 5432],
-  "custom": ["./scripts/check.sh"]
+  "custom": ["./scripts/check.sh"],
+  "security": true  
 }
 ```
 
